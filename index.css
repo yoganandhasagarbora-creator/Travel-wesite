@@ -62,7 +62,7 @@ button:hover{
 }
 .start{
     padding: 80px 60px;
-    background-color: aliceblue;
+    background-color: rgb(205, 161, 208);
     text-align: center;
 }
 .start h1{
@@ -76,11 +76,14 @@ button:hover{
    display: grid;
    grid-template-columns: repeat(3,1fr);
    gap: 30px;
+   /* background: blueviolet; */
+   box-sizing: border-box;
 }
 .card{
-    background: white;
+    background: rgb(147, 200, 236);
     border-radius: 10px;
     align-items: center;
+    justify-items: center;
     transition: transform 0.3s ease;
     transform-origin: center;
     box-shadow: 3px 5px 5px rgba(220, 216, 216, 0.5);
@@ -95,6 +98,7 @@ button:hover{
     width: 300px;
     height: 250px;
     object-fit: cover;
+    border-radius: 5px;
     
 }
 
