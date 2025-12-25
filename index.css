@@ -13,6 +13,7 @@
     justify-content: space-between;
     color: white;
     z-index: 10;
+    
 }
 
 .nav nav a{
@@ -20,6 +21,9 @@
     margin-left: 20px;
     text-decoration: none;
     font-size: 14px;
+}
+nav a:hover{
+    color: black;
 }
 
 .main {
@@ -33,22 +37,99 @@
 
 .main-content {
     max-width: 500px;
+    color: white;
 }
 
-.main h1{
+.main-content h1{
     font-size: 64px;
     margin-bottom: 20px;
 }
 
-.main p{
+.main-content p{
     font-size: 16px;
     margin-bottom: 25px;
 }
 
-.main button{
+.main-content button{
     padding: 12px 25px;
     border: none;
     background: rgb(161, 161, 236);
     color: white;
-    /* cursor: pointer; */
+    cursor: pointer;
+}
+button:hover{
+    color: #323232;
+}
+.start{
+    padding: 80px 60px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.start h1{
+    font-size: 30px;
+}
+.cn{
+    color: gray;
+    margin: 10px 0 40px;
+}
+.grid{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 30px;
+}
+.card{
+    background: white;
+    border-radius: 10px;
+    align-items: center;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    box-shadow: 3px 5px 5px rgba(220, 216, 216, 0.5);
+}
+.card:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+.grid:hover .card:not(:hover){
+    transform: scale(0.95);
+}
+.card img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+.card span{
+    display:block;
+    padding: 10px;
+}
+.discount{
+    height: 800px;
+    background-image: url("./drive-download-20251209T173451Z-3-001/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.dc{
+    text-align: right;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    max-width: 750px;
+    
+}
+.discount button{
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 1px solid rgb(231, 231, 231);
+    background: transparent;
+    color:white;
+    cursor: pointer;
+}
+.discount button:hover{
+    transform: scale(1.1);
+
 }
